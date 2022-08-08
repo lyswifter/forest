@@ -17,7 +17,7 @@ dependencies = [
  "fil_actor_power",
  "fil_actor_reward",
  "fil_actor_system",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fil_types",
  "forest_encoding",
  "forest_hash_utils",
@@ -2262,7 +2262,7 @@ version = "8.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "20323a847ff50d9aea94a8fed0854210013f6e2fa791c91731717377e6ebd2e7"
 dependencies = [
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_shared",
@@ -2277,7 +2277,7 @@ version = "8.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e77043824f3e78af50222356539e7528ac5139d3d3b162a1cb94da1e3b31d3e0"
 dependencies = [
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_shared",
@@ -2295,7 +2295,7 @@ checksum = "b5fab3ea523e9e17ff82a4f21a2623c124abe988915970306ed7903b20657700"
 dependencies = [
  "anyhow",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_ipld_hamt",
@@ -2314,7 +2314,7 @@ checksum = "83fbceb5ec130bf48cd56bf7282eba84b479978436738c1cb25090637dcd75fa"
 dependencies = [
  "anyhow",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_bitfield",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
@@ -2336,7 +2336,7 @@ dependencies = [
  "anyhow",
  "byteorder 1.4.3",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_amt",
  "fvm_ipld_bitfield",
  "fvm_ipld_blockstore",
@@ -2359,7 +2359,7 @@ checksum = "b1fab3dfabd4b4883f6d33bbd064eb238ff85e3e91e7675b4455fa01a20b70ea"
 dependencies = [
  "anyhow",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_ipld_hamt",
@@ -2379,7 +2379,7 @@ checksum = "7328d12530aac8ab36d713c6c30a71aa10a30f6edb3c93662f357b03a6155f2e"
 dependencies = [
  "anyhow",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_ipld_hamt",
@@ -2395,16 +2395,15 @@ dependencies = [
 
 [[package]]
 name = "fil_actor_reward"
-version = "8.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "44d9a701025ae9c52de4ec728e4112457ce8c77018edd86a533da95088e94b7f"
+version = "9.0.0-alpha.1"
 dependencies = [
- "fil_actors_runtime",
+ "fil_actors_runtime 9.0.0-alpha.1",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_shared",
  "lazy_static",
  "log",
+ "num",
  "num-derive",
  "num-traits",
  "serde",
@@ -2418,7 +2417,7 @@ checksum = "2edd548893f1775a43e3517da9c56eaadc3f779f6cf07aa6c5bc0623d24622dd"
 dependencies = [
  "anyhow",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fvm_ipld_blockstore",
  "fvm_ipld_encoding",
  "fvm_shared",
@@ -2463,6 +2462,41 @@ dependencies = [
 ]
 
 [[package]]
+name = "fil_actors_runtime"
+version = "9.0.0-alpha.1"
+dependencies = [
+ "anyhow",
+ "base64 0.13.0",
+ "blake2b_simd 1.0.0",
+ "byteorder 1.4.3",
+ "cid",
+ "derive_builder 0.10.2",
+ "fvm_ipld_amt",
+ "fvm_ipld_blockstore",
+ "fvm_ipld_encoding",
+ "fvm_ipld_hamt",
+ "fvm_sdk",
+ "fvm_shared",
+ "getrandom 0.2.7",
+ "hex",
+ "indexmap",
+ "integer-encoding",
+ "itertools 0.10.3",
+ "lazy_static",
+ "log",
+ "multihash 0.16.2",
+ "num-derive",
+ "num-traits",
+ "rand 0.8.5",
+ "regex",
+ "serde",
+ "serde_repr",
+ "sha2 0.10.2",
+ "thiserror",
+ "unsigned-varint 0.7.1",
+]
+
+[[package]]
 name = "fil_cns"
 version = "0.1.0"
 dependencies = [
@@ -2474,7 +2508,7 @@ dependencies = [
  "chain",
  "chain_sync",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fil_types",
  "forest_blocks",
  "forest_crypto",
@@ -2782,7 +2816,7 @@ dependencies = [
  "anyhow",
  "base64 0.13.0",
  "bls-signatures",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "forest_encoding",
  "fvm_ipld_encoding",
  "fvm_shared",
@@ -3799,7 +3833,7 @@ dependencies = [
  "async-std",
  "byteorder 1.4.3",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fil_types",
  "forest_blocks",
  "forest_crypto",
@@ -5362,7 +5396,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "beacon",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fil_types",
  "forest_json",
  "fvm_shared",
@@ -5417,6 +5451,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "09f1f8e5676e1a1f2ee8b21f38238e1243c827531c9435624c7bfb305102cee4"
 
 [[package]]
+name = "num"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43db66d1170d347f9a065114077f7dccb00c1b9478c89384490a3425279a4606"
+dependencies = [
+ "num-bigint 0.4.3",
+ "num-complex",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+]
+
+[[package]]
 name = "num-bigint"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5465,6 +5513,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "225d3389fb3509a24c93f5c29eb6bde2586b98d9f016636dff58d7c6f7569cd9"
 dependencies = [
  "autocfg",
+ "num-traits",
+]
+
+[[package]]
+name = "num-iter"
+version = "0.1.43"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d03e6c028c5dc5cac6e2dec0efda81fc887605bb3d884578bb6d6bf7514e252"
+dependencies = [
+ "autocfg",
+ "num-integer",
  "num-traits",
 ]
 
@@ -7349,7 +7408,7 @@ dependencies = [
  "byteorder 1.4.3",
  "chain",
  "cid",
- "fil_actors_runtime",
+ "fil_actors_runtime 8.0.0",
  "fil_types",
  "filecoin-proofs-api",
  "forest_blocks",
